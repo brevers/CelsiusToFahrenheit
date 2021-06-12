@@ -4,16 +4,16 @@ public class Weather {
     public static void main(String[] args) {
 
         double[] celsius = {12.5, 14.5, 17.0, 21.0, 23.0, 8.5, -9.0};
-        double[] fahrenheit=celsiusToFahrenheit(celsius);
+        double[] fahrenheit = celsiusToFahrenheit(celsius);
 
         printTemperatures(celsius,"Celsius");
-        printTemperatures(fahrenheit, "Fahrenheit");
+        printTemperatures(fahrenheit,"Fahrenheit");
     }
 
     public static double[] celsiusToFahrenheit(double[] celsius){
-        double[] fahrenheit=new double[celsius.length];
+        double[] fahrenheit = new double[celsius.length];
         for (int i = 0; i < celsius.length; i++) {
-            fahrenheit[i]=  (celsius[i]/5*9)+32;
+            fahrenheit[i] =  (celsius[i]/5*9)+32;
         }
         return fahrenheit;
     }
